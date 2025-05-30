@@ -1,0 +1,27 @@
+name: 📚 New Book
+description: 新しく積読に加える本
+labels: ["📖 Unread"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: 書名
+      placeholder: 例）『ご冗談でしょう、ファインマンさん』
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: 著者
+      placeholder: Richard P. Feynman
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options: ["📖 Unread", "👓 Reading", "✅ Read"]
+      default: 0
+  - type: textarea
+    id: note
+    attributes:
+      label: メモ・引用
+      placeholder: 読みながら気づいたことをメモする
