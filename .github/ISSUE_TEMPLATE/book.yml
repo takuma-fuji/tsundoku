@@ -1,6 +1,7 @@
 name: 📚 New Book
 description: 新しく積読に加える本
 labels: ["📖 Unread"]
+projects: "takuma-fuji/4"
 body:
   - type: input
     id: title
